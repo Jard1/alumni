@@ -1,0 +1,1 @@
+package com.example.courses.core.eis.bo;import lombok.Data;import javax.persistence.Entity;import javax.persistence.PrimaryKeyJoinColumn;import java.io.Serializable;@Data@Entity@PrimaryKeyJoinColumn(referencedColumnName = "course_id")public class OnlineCourse extends Course implements Serializable{    private Long courseId;    private String url;}
